@@ -1108,3 +1108,89 @@ SERVICIOS PAGE
     }
 
 }
+
+/* =========================
+SECCIONES EXTRA PARA RÚBRICA
+========================= */
+
+.mercado-section,
+.metodologia-section,
+.estrategias-section {
+    padding: 100px 80px;
+}
+
+.mercado-section {
+    background: #020617;
+}
+
+.metodologia-section {
+    background: #0f172a;
+}
+
+.estrategias-section {
+    background: #020617;
+}
+
+.contacto-section {
+    padding: 100px 80px;
+    background:
+        linear-gradient(rgba(2,6,23,0.75), rgba(2,6,23,0.9)),
+        url("img/imgfondo2.png");
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+}
+
+.contacto-card {
+    max-width: 700px;
+    margin: auto;
+    background: rgba(17, 28, 52, 0.9);
+    border: 1px solid #2563eb;
+    border-radius: 22px;
+    padding: 50px;
+    box-shadow: 0 10px 30px rgba(0,0,0,.4);
+}
+
+.contacto-card h2 {
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+
+.contacto-card p {
+    color: #cbd5f5;
+    line-height: 1.8;
+}
+
+.contacto-info {
+    margin-top: 30px;
+}
+
+.contacto-info p {
+    font-size: 18px;
+    margin-bottom: 12px;
+}
+
+.contacto-info i {
+    color: #60a5fa;
+    margin-right: 8px;
+    font-size: 22px;
+}
+
+/* Responsive extra */
+@media(max-width: 900px) {
+    .mercado-section,
+    .metodologia-section,
+    .estrategias-section,
+    .contacto-section {
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+
+    .contacto-card {
+        padding: 35px;
+    }
+
+    .contacto-card h2 {
+        font-size: 32px;
+    }
+}
