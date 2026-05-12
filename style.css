@@ -1224,3 +1224,186 @@ SECCIONES EXTRA PARA RÚBRICA
     background: #60a5fa;
     border-radius: 10px;
 }
+
+/* =========================
+CONTACTO
+========================= */
+
+.contacto{
+    display: flex;
+    gap: 50px;
+    padding: 100px 80px;
+    align-items: flex-start;
+}
+
+.contacto-info{
+    flex: 1;
+}
+
+.contacto-info h2{
+    font-size: 42px;
+    margin: 20px 0;
+}
+
+.contacto-info p{
+    color: #cbd5f5;
+    line-height: 1.8;
+}
+
+.info-box{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-top: 25px;
+    background: #111c34;
+    border: 1px solid #1e3a8a;
+    padding: 18px;
+    border-radius: 14px;
+}
+
+.info-box i{
+    color: #60a5fa;
+    font-size: 24px;
+}
+
+.contact-form{
+    flex: 1;
+    background: #111c34;
+    border: 1px solid #1e3a8a;
+    padding: 40px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.contact-form input,
+.contact-form textarea{
+
+    background: #020617;
+    border: 1px solid #1e293b;
+    padding: 15px;
+    border-radius: 10px;
+    color: white;
+    resize: none;
+}
+
+.contact-form textarea{
+    height: 140px;
+}
+
+.contact-form button{
+    background: #2563eb;
+    border: none;
+    padding: 15px;
+    border-radius: 10px;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.contact-form button:hover{
+    background: #1d4ed8;
+}
+
+/* REDES */
+
+.redes-contacto{
+    margin-top: 30px;
+}
+
+.redes-contacto a{
+    color: white;
+    font-size: 35px;
+    margin: 0 12px;
+    transition: 0.3s;
+}
+
+.redes-contacto a:hover{
+    color: #60a5fa;
+}
+
+/* ACTIVE NAV */
+
+.nav-btn.active{
+    color: #60a5fa;
+    position: relative;
+}
+
+.nav-btn.active::after{
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -8px;
+    width: 100%;
+    height: 2px;
+    background: #60a5fa;
+    border-radius: 10px;
+}
+
+/* RESPONSIVE */
+
+@media(max-width: 900px){
+
+    .contacto{
+        flex-direction: column;
+        padding: 80px 40px;
+    }
+
+}
+
+/* ========================= FICHAS TECNICAS ========================= */
+
+.fichas-section{
+    padding: 100px 80px;
+    background: #020617;
+}
+
+.fichas-grid{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px,1fr));
+    gap: 30px;
+}
+
+.ficha-card{
+    background: #111c34;
+    border: 1px solid #1e3a8a;
+    border-radius: 20px;
+    padding: 35px;
+    transition: 0.3s;
+}
+
+.ficha-card:hover{
+    transform: translateY(-8px);
+}
+
+.ficha-card h3{
+    font-size: 28px;
+    margin-bottom: 15px;
+}
+
+.ficha-desc{
+    color: #cbd5f5;
+    line-height: 1.7;
+    margin-bottom: 25px;
+}
+
+.ficha-item{
+    margin-bottom: 25px;
+}
+
+.ficha-item h4{
+    color: #60a5fa;
+    margin-bottom: 12px;
+}
+
+.ficha-item p,
+.ficha-item li{
+    color: #cbd5f5;
+    line-height: 1.7;
+}
+
+.ficha-item ul{
+    padding-left: 20px;
+}
