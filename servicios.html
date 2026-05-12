@@ -8,6 +8,39 @@
     <link rel="icon" href="img/Logo.png">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css">
+
+    <style>
+        .plan-precio {
+            display: flex;
+            align-items: baseline;
+            gap: 2px;
+            margin: 1rem 0 0.2rem;
+        }
+
+        .plan-moneda {
+            font-size: 18px;
+            color: #888;
+        }
+
+        .plan-monto {
+            font-size: 38px;
+            font-weight: 700;
+            line-height: 1;
+        }
+
+        .plan-periodo {
+            font-size: 13px;
+            color: #888;
+            margin: 0 0 0.75rem;
+        }
+
+        .plan-setup {
+            font-size: 11px;
+            color: #888;
+            text-align: center;
+            margin-top: 8px;
+        }
+    </style>
 </head>
 
 <body>
@@ -296,6 +329,12 @@
 
                 <h3>Básico</h3>
 
+                <div class="plan-precio">
+                    <span class="plan-moneda">$</span>
+                    <span class="plan-monto">299</span>
+                </div>
+                <p class="plan-periodo">MXN / mes</p>
+
                 <p class="plan-desc">
                     Este plan te ayuda a organizar tu base de datos de clientes.
                 </p>
@@ -314,6 +353,12 @@
 
                 <h3>Pro</h3>
 
+                <div class="plan-precio">
+                    <span class="plan-moneda">$</span>
+                    <span class="plan-monto">689</span>
+                </div>
+                <p class="plan-periodo">MXN / mes</p>
+
                 <p class="plan-desc">
                     Ideal para tomar decisiones basadas en reportes de ventas.
                 </p>
@@ -330,6 +375,12 @@
             <div class="plan-card">
 
                 <h3>Premium</h3>
+
+                <div class="plan-precio">
+                    <span class="plan-moneda">$</span>
+                    <span class="plan-monto">999</span>
+                </div>
+                <p class="plan-periodo">MXN / mes</p>
 
                 <p class="plan-desc">
                     Optimiza tu tiempo mediante la automatización de procesos.
