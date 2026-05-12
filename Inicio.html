@@ -195,7 +195,6 @@
                     <a href="Inicio.html">Inicio</a>
                     <a href="nosotros.html">Nosotros</a>
                     <a href="servicios.html">Servicios</a>
-                    <a href="paquetes.html">Paquetes</a>
                     <a href="casos.html">Casos</a>
                 </div>
 
@@ -223,37 +222,6 @@
             </div>
 
         </footer>
-
-
-        <script>
-            let sesion = localStorage.getItem("sesion");
-
-            let contenedor = document.getElementById("usuario");
-
-            if(sesion){
-
-                let nombre = localStorage.getItem("nombre");
-
-                contenedor.innerHTML = `
-                    <div class="user-info">
-                        ¡Hola, ${nombre}!
-                        <button onclick="cerrarSesion()">Cerrar sesión</button>
-                    </div>
-                `;
-
-            } else {
-
-                contenedor.innerHTML = `
-                    <a href="login.html" class="btn">Iniciar sesión</a>
-                `;
-            }
-
-            function cerrarSesion(){
-                localStorage.removeItem("sesion");
-                location.reload();
-            }
-        </script>
-
 
 </body>
 </html>
