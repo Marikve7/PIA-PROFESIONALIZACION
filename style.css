@@ -510,3 +510,601 @@ nav {
 .user-info button:hover{
     background: #20356f68;
 }
+
+/* =========================
+NOSOTROS
+========================= */
+
+.hero-nosotros{
+    height: 90vh;
+
+    background:
+        linear-gradient(rgba(2,6,23,0.75), rgba(2,6,23,0.9)),
+        url("img/imgprincipal.png");
+
+    background-size: cover;
+    background-position: center;
+
+    display: flex;
+    align-items: center;
+
+    padding: 0 80px;
+}
+
+.hero-overlay{
+    max-width: 700px;
+}
+
+.hero-nosotros h1{
+    font-size: 55px;
+    line-height: 1.2;
+    text-align: left;
+    margin-bottom: 20px;
+}
+
+.hero-texto{
+    color: #cbd5f5;
+    line-height: 1.8;
+    font-size: 18px;
+}
+
+/* EMPRESA */
+
+.empresa{
+    display: flex;
+    justify-content: space-between;
+    gap: 50px;
+
+    padding: 100px 80px;
+    align-items: center;
+}
+
+.empresa-texto{
+    flex: 1;
+}
+
+.empresa-texto h2{
+    font-size: 40px;
+    margin-bottom: 25px;
+}
+
+.empresa-texto p{
+    color: #cbd5f5;
+    line-height: 1.8;
+    margin-bottom: 20px;
+}
+
+.empresa-card{
+    flex: 1;
+
+    background: linear-gradient(135deg, #15366a, #0b1736);
+
+    border: 1px solid #2563eb;
+
+    padding: 45px;
+
+    border-radius: 20px;
+
+    box-shadow: 0 10px 30px rgba(0,0,0,.4);
+}
+
+.empresa-card i{
+    font-size: 65px;
+    color: #60a5fa;
+    margin-bottom: 20px;
+}
+
+.empresa-card h3{
+    font-size: 28px;
+    margin-bottom: 15px;
+}
+
+.empresa-card p{
+    color: #cbd5f5;
+    line-height: 1.7;
+}
+
+/* MISION Y VISION */
+
+.mv-section{
+    padding: 20px 80px 100px;
+
+    display: grid;
+
+    grid-template-columns: repeat(auto-fit, minmax(320px,1fr));
+
+    gap: 30px;
+}
+
+.mv-card{
+    background: #111c34;
+
+    border: 1px solid #1e40af;
+
+    padding: 40px;
+
+    border-radius: 18px;
+
+    transition: 0.3s;
+}
+
+.mv-card:hover{
+    transform: translateY(-8px);
+}
+
+.mv-card i{
+    font-size: 55px;
+    color: #60a5fa;
+    margin-bottom: 20px;
+}
+
+.mv-card h2{
+    margin-bottom: 20px;
+}
+
+.mv-card p{
+    color: #cbd5f5;
+    line-height: 1.8;
+}
+
+/* VALORES */
+
+.valores-section{
+    background: #020617;
+
+    padding: 100px 80px;
+
+    text-align: center;
+}
+
+.valores-section h2{
+    font-size: 42px;
+    margin-bottom: 60px;
+}
+
+.valores-grid{
+    display: grid;
+
+    grid-template-columns: repeat(auto-fit, minmax(220px,1fr));
+
+    gap: 25px;
+}
+
+.valor-box{
+    background: #111c34;
+
+    border: 1px solid #1e3a8a;
+
+    padding: 35px;
+
+    border-radius: 18px;
+
+    transition: 0.3s;
+}
+
+.valor-box:hover{
+    transform: translateY(-8px);
+}
+
+.valor-box i{
+    font-size: 50px;
+    color: #60a5fa;
+    margin-bottom: 20px;
+}
+
+.valor-box h3{
+    margin-bottom: 15px;
+}
+
+.valor-box p{
+    color: #cbd5f5;
+    line-height: 1.7;
+}
+
+/* CTA */
+
+.cta-nosotros{
+    text-align: center;
+
+    padding: 100px 20px;
+
+    background:
+        linear-gradient(rgba(2,6,23,0.75), rgba(2,6,23,0.85)),
+        url("img/imgfondo2.png");
+
+    background-size: cover;
+    background-position: center;
+}
+
+.cta-nosotros h2{
+    font-size: 42px;
+    margin-bottom: 20px;
+}
+
+.cta-nosotros p{
+    color: #cbd5f5;
+    margin-bottom: 30px;
+}
+
+/* RESPONSIVE */
+
+@media(max-width: 900px){
+
+    .empresa{
+        flex-direction: column;
+    }
+
+    .hero-nosotros{
+        padding: 0 40px;
+    }
+
+    .hero-nosotros h1{
+        font-size: 42px;
+    }
+
+    .empresa,
+    .mv-section,
+    .valores-section{
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+
+}
+
+/* =========================
+SERVICIOS PAGE
+========================= */
+
+.hero-servicios{
+    height: 85vh;
+
+    background:
+        linear-gradient(rgba(2,6,23,0.75), rgba(2,6,23,0.9)),
+        url("img/imgfondo2.png");
+
+    background-size: cover;
+    background-position: center;
+
+    display: flex;
+    align-items: center;
+
+    padding: 0 80px;
+}
+
+.hero-servicios-content{
+    max-width: 700px;
+}
+
+.hero-servicios h1{
+    font-size: 55px;
+    line-height: 1.2;
+    text-align: left;
+    margin-bottom: 20px;
+}
+
+.hero-servicios p{
+    color: #cbd5f5;
+    line-height: 1.8;
+    font-size: 18px;
+}
+
+/* SISTEMA */
+
+.sistema-section{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    gap: 50px;
+
+    padding: 100px 80px;
+}
+
+.sistema-info{
+    flex: 1;
+}
+
+.mini-servicio{
+    color: #60a5fa;
+    letter-spacing: 3px;
+    font-size: 14px;
+}
+
+.sistema-info h2{
+    font-size: 42px;
+    margin: 15px 0;
+}
+
+.sistema-info p{
+    color: #cbd5f5;
+    line-height: 1.8;
+}
+
+.beneficios{
+    margin-top: 35px;
+
+    display: grid;
+
+    grid-template-columns: repeat(auto-fit, minmax(220px,1fr));
+
+    gap: 20px;
+}
+
+.beneficio{
+    background: #111c34;
+
+    border: 1px solid #1e3a8a;
+
+    padding: 18px;
+
+    border-radius: 14px;
+
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.beneficio i{
+    color: #60a5fa;
+    font-size: 24px;
+}
+
+.sistema-card{
+    flex: 1;
+
+    background: linear-gradient(135deg, #15366a, #081224);
+
+    border: 1px solid #2563eb;
+
+    padding: 50px;
+
+    border-radius: 20px;
+}
+
+.sistema-card i{
+    font-size: 70px;
+    color: #60a5fa;
+    margin-bottom: 20px;
+}
+
+.sistema-card h3{
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+.sistema-card p{
+    color: #cbd5f5;
+    line-height: 1.8;
+}
+
+/* SERVICIOS */
+
+.servicios-page{
+    padding: 50px 80px 100px;
+}
+
+.servicios-page h2{
+    text-align: center;
+    font-size: 42px;
+    margin-bottom: 60px;
+}
+
+.servicios-grid{
+    display: grid;
+
+    grid-template-columns: repeat(auto-fit, minmax(320px,1fr));
+
+    gap: 30px;
+}
+
+.servicio-box{
+    background: #111c34;
+
+    border: 1px solid #1e40af;
+
+    padding: 40px;
+
+    border-radius: 20px;
+
+    transition: 0.3s;
+}
+
+.servicio-box:hover{
+    transform: translateY(-8px);
+}
+
+.servicio-icon{
+    width: 70px;
+    height: 70px;
+
+    background: rgba(96,165,250,.1);
+
+    border-radius: 15px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    margin-bottom: 20px;
+}
+
+.servicio-icon i{
+    font-size: 35px;
+    color: #60a5fa;
+}
+
+.servicio-box h3{
+    margin-bottom: 15px;
+}
+
+.servicio-box p{
+    color: #cbd5f5;
+    line-height: 1.7;
+}
+
+.servicio-box ul{
+    margin-top: 25px;
+    padding-left: 20px;
+}
+
+.servicio-box li{
+    margin-bottom: 12px;
+    color: #cbd5f5;
+}
+
+/* PLANES */
+
+.planes-section{
+    background: #020617;
+
+    padding: 100px 80px;
+}
+
+.planes-header{
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.planes-header h2{
+    font-size: 42px;
+}
+
+.planes-grid{
+    display: grid;
+
+    grid-template-columns: repeat(auto-fit, minmax(280px,1fr));
+
+    gap: 30px;
+}
+
+.plan-card{
+    background: #111c34;
+
+    border: 1px solid #1e3a8a;
+
+    padding: 45px 35px;
+
+    border-radius: 22px;
+
+    position: relative;
+
+    transition: 0.3s;
+}
+
+.plan-card:hover{
+    transform: translateY(-8px);
+}
+
+.destacado{
+    border: 2px solid #3b82f6;
+
+    transform: scale(1.03);
+}
+
+.popular{
+    position: absolute;
+
+    top: -15px;
+    right: 25px;
+
+    background: #2563eb;
+
+    padding: 8px 16px;
+
+    border-radius: 30px;
+
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.plan-card h3{
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+.plan-desc{
+    color: #cbd5f5;
+    margin-bottom: 25px;
+    line-height: 1.7;
+}
+
+.plan-card ul{
+    padding-left: 20px;
+}
+
+.plan-card li{
+    margin-bottom: 15px;
+    color: #cbd5f5;
+}
+
+.btn-plan{
+    display: inline-block;
+
+    margin-top: 25px;
+
+    background: #2563eb;
+
+    color: white;
+
+    padding: 12px 20px;
+
+    border-radius: 10px;
+
+    text-decoration: none;
+
+    transition: 0.3s;
+}
+
+.btn-plan:hover{
+    background: #1d4ed8;
+}
+
+/* CTA */
+
+.cta-servicios{
+    text-align: center;
+
+    padding: 100px 20px;
+
+    background:
+        linear-gradient(rgba(2,6,23,0.7), rgba(2,6,23,0.85)),
+        url("img/imgprincipal.png");
+
+    background-size: cover;
+    background-position: center;
+}
+
+.cta-servicios h2{
+    font-size: 42px;
+    margin-bottom: 20px;
+}
+
+.cta-servicios p{
+    color: #cbd5f5;
+    margin-bottom: 30px;
+}
+
+/* RESPONSIVE */
+
+@media(max-width: 900px){
+
+    .hero-servicios{
+        padding: 0 40px;
+    }
+
+    .hero-servicios h1{
+        font-size: 42px;
+    }
+
+    .sistema-section{
+        flex-direction: column;
+    }
+
+    .sistema-section,
+    .servicios-page,
+    .planes-section{
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+
+}
