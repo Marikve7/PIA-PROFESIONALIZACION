@@ -17,7 +17,7 @@
             </div>
 
             <nav>
-                <a href="Inicio.html" class="nav-btn">Inicio</a>
+                <a href="Inicio.html" class="nav-btn active">Inicio</a>
                 <a href="nosotros.html" class="nav-btn">Nosotros</a>
                 <a href="servicios.html" class="nav-btn">Servicios</a>
                 <a href="casos.html" class="nav-btn">Casos de éxito</a>
@@ -31,7 +31,7 @@
             
             <section class="section">
                 <div class="contenido">
-                    <p class="subtitulo">INNOVACIÒN Y TECNOLOGÍA</p>
+                    <p class="subtitulo">INNOVACIÓN Y TECNOLOGÍA</p>
 
                     <h1>Creamos soluciones que transforman ideas en resultados</h1>
 
@@ -222,6 +222,48 @@
             </div>
 
         </footer>
+
+        <script>
+            const testimonios = document.querySelectorAll(".card-testimonio");
+            const btnNext = document.querySelector(".next");
+            const btnPrev = document.querySelector(".prev");
+
+            let index = 0;
+
+            function mostrarTestimonio(i){
+
+                testimonios.forEach(card =>{
+                    card.classList.remove("activo");
+                });
+
+                testimonios[i].classList.add("activo");
+            }
+
+            btnNext.addEventListener("click", () => {
+
+                index++;
+
+                if(index >= testimonios.length){
+                    index = 0;
+                }
+
+                mostrarTestimonio(index);
+
+            });
+
+            btnPrev.addEventListener("click", () => {
+
+                index--;
+
+                if(index < 0){
+                    index = testimonios.length - 1;
+                }
+
+                mostrarTestimonio(index);
+
+            });
+
+            </script>
 
 </body>
 </html>
