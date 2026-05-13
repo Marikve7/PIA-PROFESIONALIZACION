@@ -1438,3 +1438,41 @@ CONTACTO
     text-align: center;
     margin-top: 8px;
 }
+
+
+/* ================= BOTÓN SUBIR ================= */
+
+.btn-top{
+    position: fixed;
+
+    bottom: 30px;
+    right: 30px;
+
+    width: 50px;
+    height: 50px;
+
+    background: #2563eb;
+
+    color: white;
+
+    border-radius: 50%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    text-decoration: none;
+
+    font-size: 28px;
+
+    box-shadow: 0 5px 15px rgba(0,0,0,.4);
+
+    transition: 0.3s;
+
+    z-index: 999;
+}
+
+.btn-top:hover{
+    background: #1d4ed8;
+    transform: translateY(-5px);
+}
